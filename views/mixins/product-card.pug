@@ -1,0 +1,8 @@
+mixin product-card(product)
+    .col-md-6
+        div.card
+            img.card-img-top(src=product.image alt=`Image background ${product.name}`)
+            div.card-body
+                h5.card-title= product.name
+                p.card-text=product.price
+                a.btn.btn-primary(href="#") Посмотреть товар

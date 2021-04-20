@@ -1,0 +1,34 @@
+extends base.pug
+
+block content
+	section
+		.container
+			div.p-5.mb-4.bg-light.rounded-3.mt-4
+				div.container-fluid.py-5
+					h1.display-5.fw-bold= message
+					p.col-md-8.fs-4.pl-0 На этом сайте вы можете найти все вариации шаверм, что существуют в этой Вселенной
+					button.btn.btn-primary.btn-lg Посмотреть сипсок
+	section.mb-5
+		.container
+			.row
+				each product in products
+					+product-card(product)
+	section.mb-5
+		.container
+			.row
+				each feature in features
+					+features-card(feature)
+	section.mb-5
+
+		.container
+			h3 Пишите, если шо
+			div.mb-3
+				label.form-label(for='exampleFormNameAndSurname') Имя и фамилия
+				input.form-control#exampleFormNameAndSurname(rows='3' placeholder='Jorka ITшник')
+			div.mb-3
+				label.form-label(for='exampleFormMail') Почта
+				input.form-control#exampleFormMail(type='email' placeholder='name@example.com')
+			div.mb-3
+				label.form-label(for='exampleFormNumber') Номер телефона
+				input.form-control#exampleFormNumber(type='phone' placeholder='+7(950)123-56-78')
+				button.mt-2.btn.btn-primary  Оставить заявку

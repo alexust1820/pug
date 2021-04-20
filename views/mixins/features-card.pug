@@ -1,0 +1,9 @@
+mixin features-card(feature)
+    .col-md-4
+        div.card(style='width: 20rem;')
+            div.card-body
+                h5.card-title= feature.mainText
+                p.card-text=feature.p
+                div.d-flex.align-items-center.c-primary
+                    u.btn(href="#")= feature.btnText
+                    span >

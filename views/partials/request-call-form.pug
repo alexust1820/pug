@@ -1,0 +1,34 @@
+section.mb-5
+    .container
+        h2.mb-3 Заказать обратный звонок
+        form(action="/api/request-call" method="get")
+            .row.justify-content-center
+                .col-mb-5
+                    .mb-3
+                        label.form-label(for="name") Имя и Фамилия
+                        input.form-control(
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Abobovich"
+                            required
+                        )
+                    .mb-3
+                        label.form-label(for="email") Mail
+                        input.form-control(
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="aboba@mail.ru"
+                            required
+                        )
+                    .mb-3
+                        label.form-label(for="name") Телефон
+                        input.form-control(
+                            type="text"
+                            id="phone"
+                            name="phone"
+                            placeholder="+7(777)777-77-77"
+                            required
+                        )
+                    button.btn.btn-success.w-100(type="submit") Отправить заявку

@@ -1,0 +1,56 @@
+extends base.pug
+
+block content
+  section.mb-5.mt-5
+    div.container
+      div.d-flex
+        p.text-muted Home
+        p.text-muted -
+        p.text-muted Jeans
+        p.text-muted -
+        p Push-up Jeans
+    div.container.d-flex.justify-content-between
+      div.d-flex.flex-column.w-50
+        img.w-100(src='detail-3-gray.jpg')
+      div.w-50.pl-5.ml-5.d-flex.flex-column
+        h2 Push-up Jeans
+        div.d-flex.justify-content-between.w-75
+          div.d-flex.justify-content-between.mr-5
+            p.m-0.mr-3 $65.00
+            s(style='color: gray') $90.00
+          div.d-flex.align-items-center
+            img(style='width: 20px', src='some_star.png')
+            img(style='width: 20px', src='some_star.png')
+            img(style='width: 20px', src='some_star.png')
+            img(style='width: 20px', src='some_star.png')
+            img(style='width: 20px', src='some_star.png')
+            p.m-0.ml-2 25 reviews
+        p.mt-4 Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.
+
+        div.d-flex
+          h5.mr-2 Size
+          span.text-muted (required)
+        div.border.w-50.position-relative.d-flex.justify-content-between.align-items-center(style='padding: 10px;')
+          h4.m-0 SMALL
+          div(style='width: 10px; height: 10px; border-bottom: solid black; border-right: solid black; transform: rotate(45deg);')
+
+        div.d-flex.mt-4
+          h5.mr-2 Type
+          span.text-muted (required)
+        div.d-flex
+          button.border.border-warning.mr-2.p-2
+            h5.m-0 HOODIE
+          button.border.border-warning.p-2
+            h5.m-0 COLLEGE
+        button.btn.btn-dark.mt-3 Add to cart
+        button.btn.btn-link Add to wishlist
+
+        div.d-flex
+          h5.mr-2 Category:
+          span.text-muted Jeans
+        div.d-flex
+          h5.mr-2 Tags:
+          span.text-muted Leisure, Elegant
+
+
+  include partials/request-call-form
